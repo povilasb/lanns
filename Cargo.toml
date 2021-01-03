@@ -1,0 +1,21 @@
+[package]
+name = "lanns"
+version = "0.1.0"
+authors = ["Povilas Balciunas <povilasb@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+hostman = { git = "https://github.com/povilasb/hostman", branch = "expose-types" }
+hosts-parser = "0.1.0"
+nix = "0.19.1"
+peer-discovery = { git = "https://github.com/libredrop/peer-discovery-rust", branch = "improve-addr-discovery" }
+unwrap = "1.2.1"
+log = "0.4.11"
+simple_logger = "1.11.0"
+async-std = "1.8.0"
+futures = "0.3.8"
+hostname = "0.3.1"
+
+[[bin]]
+name = "whosts"
+path = "src/whosts.rs"
